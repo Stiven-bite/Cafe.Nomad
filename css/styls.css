@@ -1,0 +1,403 @@
+/*-------------------------------ESTILOS GENERALES---------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Georgia', serif, "Arial", "Helvetica", sans-serif;
+    background: #D3D3D3;
+}
+/*-------------------------------ESTILOS CABECERA---------------------------------*/
+h1{
+    font-family: 'playfair display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3E2723;
+}
+.img1{
+    height: 100px;
+    width: 100px;
+}
+header{
+    background: rgba(217,217,217,255);
+    color: #D3D3D3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------------------ESTILOS MENU---------------------------------*/
+nav a{
+    text-decoration: none;
+    color: #D3D3D3;
+    font-size: 20px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    background: #8b4513;
+    border: 1px solid #eb8e08;  
+}
+nav > :hover{
+    text-decoration: underline;
+    color: #eb8e08;
+}
+nav > .activo{
+    color: rgb(254, 67, 67);
+}
+/*-------------------------------ESTILOS FOOTER---------------------------------*/
+footer {
+    background: #8b4513;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px; 
+    color: #D3D3D3;
+    border-top: solid #eb8e08;
+}
+footer > div {
+    flex: 1; 
+    min-width: 200px; 
+    display: flex;
+    flex-direction: column;
+    margin: 10px; 
+}
+footer > div > div{
+    display: flex;
+    flex-direction: column;
+}
+footer  div  div  a{
+    text-decoration: none;
+    color:  #D3D3D3;
+}
+footer  div  div {
+    font-size: 15px;
+}
+.imgfoo{
+    width: 25px;
+    height: auto;
+}
+footer > div > div > form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.inpfoo{
+    margin-right: 10px;
+}
+footer > div > div > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imgfoo2 {
+    margin-right: 20px;
+    margin-top: 15px;
+}
+footer > div > div > .enlacefoot{
+    margin-top: 15px;
+}
+footer > div > div > a:hover{
+    color: #eb8e08;
+    text-decoration: underline;
+}
+footer > div > div > form > input[type='email']{
+    padding: 5px;
+    margin: 0;
+    border: 2px solid #3E2723;
+    border-radius: 5px;
+    background-color: #D3D3D3;
+    transition: border-color 0.3s ease
+}
+footer > div > div > form > input[type='email']:focus{
+    border-color: #D3D3D3;
+    outline: none;
+    border: 2px solid #3E2723;
+}
+footer > div > div > form > input[type='email']:hover{
+    background-color: #bfb2b2;
+}
+/*------------------------------- ESTILOS PRESUPUESTOS ---------------------------------*/
+.container-presupuesto{
+    background: #D3D3D3;
+    width: 80%;
+    max-width: 1200px;
+    margin: 3% auto;
+    padding: 3% 3%;  
+}
+.container-presupuesto *{
+    box-sizing: border-box;
+}
+.form-presupuestos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 5px;
+    padding: 5px;
+}
+main > div > form > div > div > input{
+    width: 40%;
+    padding: 5px;
+    border: 2px solid #3E2723;
+    border-radius: 10px;
+    background-color: #D3D3D3;
+    transition: border-color 0.3 ease;
+}
+main > div > form > div > div > input:hover{
+    background: #bfb2b2;
+}
+main > div > form > div > div > input:focus{
+    background-color: #bfb2b2;
+}
+main > div > form > div > div > textarea{
+    width: 40%;
+    padding: 5px;
+    border: 2px solid #3E2723;
+    border-radius: 10px;
+    background-color: #D3D3D3;
+    transition: border-color 0.3 ease;
+}
+main > div > form > div > div > textarea:hover{
+    background: #bfb2b2;
+}
+main > div > form > div > div > textarea:focus{
+    background-color: #bfb2b2;
+}
+.presupuesto-titulo{
+    font-size: 1.2rem;
+    color: #3E2723;  
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+}
+main > div > form > div > div > label{  
+    font-weight: 200;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: #3E2723;
+}
+main > div > form > div > div > label > a{
+    text-decoration: none;
+    color: rgb(254, 67, 67);
+}
+main > div > form > div > div > label > a:hover{
+    color: #eb8e08;
+}
+button{
+    background-color: #8b4513;
+    padding: 12px 24px;
+    border: none;
+    color: #D3D3D3;
+    letter-spacing: 0.07em;
+    border-radius: 15px;
+}
+button:hover{
+    background: #eb8e08;
+}
+/*------------------------------- ESTILOS INDEX ---------------------------------*/
+.index-section-container1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+.image-container{
+    width: 50vw;
+    height: 50vh;
+    margin-right: 3%;
+}
+.image-container img {
+    height: 100%;
+    width: 100%;
+}
+.div-index1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.index-text-box1 > p{
+    font-size: 33px;
+    font-family: 'georgia', serif;
+    font-weight: bold;
+    color: #3E2723;
+    margin-bottom: 15px;
+}
+.index-text-box2{
+    font-size: 18px;
+}
+.div-index2{
+    margin-top: 15px;
+}
+.boton-index{
+    display: inline-block;
+    background-color: #8b4513;
+    padding: 12px 24px;
+    border: none;
+    color: #D3D3D3;
+    letter-spacing: 0.07em;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+.boton-index:hover{
+    background: #eb8e08;
+}
+.index-section-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: #8b4513;
+    width: 100%;
+    height: 45vh;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.index-section-container2 > div {
+    width: 17%;
+    color: #D3D3D3;
+    font-family: 'georgia', serif;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
+.index-section-container2 > div > div > img{
+    width: 40%;
+    height: 40%;
+}
+.img-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15%;   
+}
+.index-section-container3{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 100%;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.index-section-container3 h2{
+    font-size: 25px;
+    color: #eb8e08;
+    font-family: 'georgia', serif;   
+}
+.index-productos-destacados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+.index-productos-destacados > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.index-productos-destacados img{
+    width: 100px;
+    height: 100px;
+}
+.index-titulo-productos-destacados{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 4em;
+}
+.estilos{
+    
+    margin-bottom: 3px;
+    width: 100%;
+}
+.only-seo{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+/*--------------------------------Estilos de terminos y condiciones, aviso legal y politica de privacidad y cookies---------------------------------------------------*/
+.formato-texto{
+    font-size: 1rem;      
+    line-height: 1.6;
+    color: #3E2723;
+    font-family: 'Georgia', serif, "Arial", "Helvetica", sans-serif;
+}
+.container-legalidad{
+    padding: 3%;
+}
+/*------------------------------Estilos pagina de contacto--------------------------------------------------------------------------------*/
+.box-p-cantacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5%;
+}
+h3{
+    color: #3E2723;
+    font-size: 20px;
+}
+.p-contacto-1{
+    margin-top: 15px;
+}
+.contacto-redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*-----------------------------------Estilos pagina de productos------------------------------------------------------*/
+.productos-galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 3.5rem;
+    padding: 3.5rem;
+}
+.productos img{
+    width: 100%;
+    height: auto;
+}
+h4{
+    font-size: 25px;
+}
+.estilo-productos{
+    margin-bottom: 15px;
+}
+@media (max-width: 750px){
+    .productos-galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px){
+    .productos-galeria{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
